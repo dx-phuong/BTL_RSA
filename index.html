@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chữ ký điện tử RSA</title>
+    <link rel="stylesheet" href="/main.css">
+    <script src="https://cdn.tutorialjinni.com/mammoth/1.4.19/mammoth.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Người dùng nhập -->
+        <!-- <div style="margin-top: 12px;" class="header__value">
+            <h3 class="header__value-title-main">SỐ NGUYÊN TỐ</h3>
+            <div style="margin-top: 8px;" class="header__value-container">
+                <h4 class="header__value-container-title-1">P</h4>
+                <input type="text" class="header__value-container-input-1">
+            </div>
+            <div style="margin-top: 8px;" class="header__value-container">
+                <h4 class="header__value-container-title-2">Q</h4>
+                <input type="text" class="header__value-container-input-2">
+            </div>
+
+            <button onclick="checkValue()" class="btn header__value-ok">ok</button>
+        </div> -->
+        <div class="main__left">
+            <h2 class="main__left-header-title">PHÁT SINH CHỮ KÝ</h2>
+            <div class="main__left-content">
+                <div class="title-pos-origin title main__left-content-title">Văn bản ký</div>
+                <textarea name="content" class="main__left-content-input" cols="20" rows="6"></textarea>
+                <button onclick="activateInput()" class="btn main__left-content-btn-file">File</button>
+                <input id="main__left-content-btn-sub-file" style="display: none;" type="file"
+                    onchange="parseWordDocxFile(this)">
+            </div>
+            <button onclick="xuLiMaHoa()" class="btn main__left-btn-sign">Ký</button>
+            <div class="main__left-footer">
+                <div class="title main__left-footer-title">Chữ ký</div>
+                <textarea name="content" class="main__left-footer-input" cols="20" rows="6"></textarea>
+                <div class="main__left-footer-wrapper">
+                    <button onclick="moveValue()" class="btn main__left-footer-btn-move">Chuyển</button>
+                    <button onclick="saveFile()" class="btn main__left-footer-btn-save">Lưu</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__right">
+            <h2 class="main__right-header-title">KIỂM TRA CHỮ KÝ</h2>
+            <div class="main__right-content">
+                <div class="main__right-content-1">
+                    <div class="title-pos-origin title main__right-content-1-title">Văn bản ký</div>
+                    <textarea name="content" class="main__right-content-1-input" cols="20" rows="6"></textarea>
+                    <button onclick="activateInput2()" class="btn main__right-content-1-btn">File văn bản</button>
+                    <input id="main__right-content-btn-sub-file-1" style="display: none;" type="file"
+                        onchange="parseWordDocxFile2(this)">
+                </div>
+                <div class="main__right-content-2">
+                    <div class="title-pos-origin title main__right-content-2-title">Chữ ký</div>
+                    <textarea name="content" class="main__right-content-2-input" cols="20" rows="6"></textarea>
+                    <button onclick="activateInput3()" class="btn main__right-content-2-btn">File chữ ký</button>
+                    <input id="main__right-content-btn-sub-file-2" style="display: none;" type="file"
+                        onchange="parseWordDocxFile3(this)">
+                </div>
+            </div>
+
+            <button onclick="xuLiGiaiMa()" class="btn main__right-btn-check-sign">Kiểm tra chữ ký</button>
+            <div class="main__right-footer">
+                <div class="title main__right-footer-title">Thông báo</div>
+                <textarea name="content" class="main__right-footer-input" cols="20" rows="6"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

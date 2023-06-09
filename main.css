@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Begin common */
+.btn {
+    width: 150px;
+    height: 48px;
+    max-height: 100%;
+    cursor: pointer;
+    background-color: rgb(97, 158, 244);
+    font-size: 18px;
+}
+
+
+.title {
+    width: 88px;
+    max-width: 100%;
+    font-size: 19px;
+}
+
+.title-pos-origin,
+.main__left-footer-input {
+    align-self: flex-start;
+}
+
+input[type="text"] {
+    min-height: 48px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+
+/* End common */
+
+
+.main {
+    display: flex;
+    background-color: #9ee0ab;
+    height: 100vh;
+}
+
+.main__left {
+    flex: 1;
+    border-right: 2px solid #000;
+}
+
+
+.main__right {
+    flex: 1;
+}
+
+.main__left-header-title,
+.main__right-header-title {
+    margin: 8px 0 0 8px;
+}
+
+.main__left-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    align-items: center;
+}
+
+
+.main__left-btn-sign,
+.main__right-btn-check-sign {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 24px;
+}
+
+.main__left-footer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main__left-footer-btn-save {
+    display: block;
+    margin-top: 18px;
+}
+
+
+.main__right-content-1,
+.main__right-content-2 {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__right-footer {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__right-footer-input {
+    margin-right: 300px;
+}
+
+textarea[name="content"] {
+    font-size: 24px;
+}
+
+.header__value-ok {
+    margin: 32px 0 0 16px;
+}
